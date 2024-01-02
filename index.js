@@ -86,3 +86,31 @@ var finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099],
   ];
+
+
+  var totalNumberofMonths = finances.length;
+
+var netTotal = 0;
+
+var currentMonth;
+
+var date;
+
+var amount;
+
+//This is a for loop code to display the current month, date and netTotal 
+for (var i= 0; i < finances.length; i++) {
+  currentMonth= finances[i]
+  /* console.log(currentMonth) */
+  date= currentMonth[0]
+  /* console.log(date) */
+  amount = currentMonth[1]
+  /* console.log(amount) */
+  netTotal = netTotal + amount
+  
+  
+
+}
+
+console.log(netTotal)
+console.log(currentMonth)
