@@ -87,7 +87,7 @@ var finances = [
     ['Feb-2017', 671099],
   ];
 
-
+// Variables declaration 
   var totalNumberofMonths = finances.length;
 
 var netTotal = 0;
@@ -98,6 +98,12 @@ var date;
 
 var amount;
 
+var averagechanges;
+
+var change = 0;
+
+var analysis;
+
 //This is a for loop code to display the current month, date and netTotal 
 for (var i= 0; i < finances.length; i++) {
   currentMonth= finances[i]
@@ -105,12 +111,27 @@ for (var i= 0; i < finances.length; i++) {
   date= currentMonth[0]
   /* console.log(date) */
   amount = currentMonth[1]
-  /* console.log(amount) */
+ // Calculate net total
   netTotal = netTotal + amount
+
+  // Calculate changes in Profit/Losses
+  if (i > 0) {
+
+  }
   
   
 
 }
 
-console.log(netTotal)
-console.log(currentMonth)
+
+
+
+
+
+// Displaying  the results
+
+
+
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total: $" + netTotal);
